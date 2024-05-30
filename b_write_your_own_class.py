@@ -61,10 +61,10 @@ my_credit_card.make_purchase(-1)          # print error
 my_credit_card.make_purchase(200)         # print error
 assert my_credit_card.get_balance() == 900
 
-# my_credit_card.make_payment(500)
-# assert my_credit_card.get_balance() == 400
+my_credit_card.make_payment(500)
+assert my_credit_card.get_balance() == 400
 
-# my_credit_card.make_payment(5000)
-# assert my_credit_card.get_balance() == 0
+my_credit_card.make_payment(5000)
+assert my_credit_card.get_balance() == 0
 
-# print("All tests passed!")
+print("All tests passed!")
